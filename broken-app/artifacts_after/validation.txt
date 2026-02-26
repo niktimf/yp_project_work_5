@@ -1,0 +1,21 @@
+=== VALGRIND (после оптимизации) ===
+
+HEAP SUMMARY:
+   in use at exit: 544 bytes in 1 blocks
+ total heap usage: 217 allocs, 216 frees, 24,237 bytes allocated
+
+LEAK SUMMARY:
+   definitely lost: 0 bytes in 0 blocks
+   indirectly lost: 0 bytes in 0 blocks
+     possibly lost: 0 bytes in 0 blocks
+   still reachable: 544 bytes in 1 blocks
+
+ERROR SUMMARY: 0 errors from 0 contexts
+
+=== MIRI (после оптимизации) ===
+
+$ MIRIFLAGS="-Zmiri-disable-isolation" cargo +nightly miri test --test integration test_safe_box_value
+test test_safe_box_value ... ok (0.21s)
+
+$ MIRIFLAGS="-Zmiri-disable-isolation" cargo +nightly miri test --test integration test_concurrency
+test test_concurrency_regression ... ok (1.28s)

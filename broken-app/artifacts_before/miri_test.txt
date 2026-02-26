@@ -1,0 +1,6 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.04s
+     Running tests/integration.rs (/app/target/miri/x86_64-unknown-linux-gnu/debug/deps/integration-9c2e783275197939)
+
+running 11 tests
+test prop_average_positive_bounds ... ok
+test prop_average_positive_reference ... 

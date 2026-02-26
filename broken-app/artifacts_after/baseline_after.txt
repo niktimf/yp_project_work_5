@@ -1,0 +1,12 @@
+   Compiling broken-app v0.1.0 (/home/nikita/RustroverProjects/yp_project_work_5/broken-app)
+    Finished `bench` profile [optimized] target(s) in 0.33s
+     Running benches/baseline.rs (/home/nikita/RustroverProjects/yp_project_work_5/target/release/deps/baseline-e45b6503bb0f12b3)
+sum_even: 14.332µs
+slow_fib: 161ns
+slow_dedup: 178.608µs
+sum_even: 20.429µs
+slow_fib: 61ns
+slow_dedup: 145.896µs
+sum_even: 16.242µs
+slow_fib: 44ns
+slow_dedup: 131.858µs
