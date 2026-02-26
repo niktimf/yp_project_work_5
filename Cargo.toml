@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "broken-app",
+    "reference-app",
+]
+resolver = "3"
+
+[profile.release]
+debug = true
